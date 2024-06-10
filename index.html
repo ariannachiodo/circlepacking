@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+</section>
+
+<canvas id="canvas" class="p5Canvas"></canvas>
+  <head>
+	
+    <title>Circle Packing</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+
+  
+  <body>
+    <script src="script.js"></script>
+    
+
+
+
+
+    
+    <header>
+
+      <div class="grid_header">
+      <div class="logo_margin">
+
+      <section id="logo">
+        <a href="#headline">Circle Packing</a>
+      </section>
+    </div>
+
+     
+    
+  </div>
+      
+
+      
+
+    </header>      
+     
+    
+ 
+
+    <div class="grid">  
+      
+      <div class="content">
+
+        <nav id="indice">
+          
+          <a href="#s"> storia</a>
+          <br><a href="#cf"> come funziona?</a>
+          <br><a href="#u"> utilizzi</a>
+          <br><a href="#ap"> altri packing</a>
+          <br><a href="#b"> bibliografia</a>
+
+       </nav>
+
+    <section id="headline">
+    <h1>	il “circle packing” 
+		è un interessante problema geometrico   che consiste nel cercare di disporre il maggior 
+		numero possibile di cerchi all’interno di una forma specifica.</h1>
+<iframe scrolling=no frameborder=0 width=1400 height=500 src="assets/sketeches/circle/"></iframe>
+
+          <div class="cap1">
+          
+          <section id = "s">
+              <h2>storia</h2>
+          </section>
+
+            <p>Il circle packing, è un concetto che ha le sue radici nelle note di William Thurston. 
+				In sintesi, Thurston ha dimostrato che per ogni triangolazione di una sfera esiste un “circle packing”, 
+				ovvero una disposizione di cerchi che si toccano a vicenda seguendo il modello della triangolazione. 
+			
+				
+				Thurston ha presentato il concetto di circle packing a un pubblico più ampio durante la conferenza Purdue del 1985. 
+				In quella occasione, ha proposto uno schema per la costruzione di mappe conformi basate su circle packings e ha avanzato 
+				una congettura secondo cui queste mappe “finite” avrebbero convergere, con un raffinamento, a una mappa conforme classica.
+				
+				Per quanto riguarda gli antecedenti, Thurston ha scoperto che il suo teorema sui packing della sfera derivava da un lavoro
+				precedente di E. Andreev sui gruppi di riflessione. In seguito, Reiner Kuhnau ha indicato una prova del 1936 di P. Koebe, 
+				quindi possiamo chiamarlo il Teorema K-A-T (Koebe-Andreev-Thurston).
+				I protagonisti principali della nostra storia, i cerchi, sono ben noti a tutti noi. Lavoriamo in spazi geometrici familiari: 
+				la sfera P, il piano euclideo C, e il piano iperbolico rappresentato dal disco unitario D. </p>
+
+
+             
+
+
+
+          </div>
+          
+          
+            
+
+            
+
+
+        
+          <div class="cap2">
+
+            <section id="cf">
+              <h2>come funziona?</h2>
+            </section>
+
+          <p>
+			Posizionare cerchi di raggio uguale o diverso in un'area definita (come un cerchio più grande o un rettangolo) senza che si tocchino e, preferibilmente, utilizzando lo spazio nel modo più efficiente possibile.</p>
+
+			<strong>Regole</strong>
+    <ul>
+        <li>I cerchi non devono sovrapporsi.</li>
+        <li>I cerchi devono rimanere all'interno dell'area specificata.</li>
+    </ul>
+
+    <strong>Funzionamento</strong>
+    <ol>
+        <li><strong>Posizionamento iniziale</strong>: Si mette il primo cerchio in un punto qualsiasi dell'area.</li>
+        <li><strong>Aggiunta di cerchi</strong>: Si aggiunge un cerchio alla volta, cercando di posizionarlo in una posizione che non causi sovrapposizioni.</li>
+        <li><strong>Verifica delle collisioni</strong>: Ogni volta che si aggiunge un cerchio, si controlla che non si sovrapponga agli altri.</li>
+        <li><strong>Regolazione</strong>: Se c'è una sovrapposizione, il cerchio viene spostato finché non trova una posizione libera. Questo processo può ripetersi diverse volte.</li>
+    </ol>
+
+     <strong>Ottimizzazione</strong>
+    <p>Algoritmi avanzati, come gli algoritmi genetici o la simulazione di annealing, possono essere utilizzati per trovare la disposizione ottimale dei cerchi in problemi complessi.</p>
+
+     <strong>Applicazioni</strong>
+    <p>Il circle packing viene usato in vari campi, come il design di layout grafici, la visualizzazione di dati e l'ottimizzazione dello spazio in imballaggi.</p>
+
+	<strong>Esempio</strong>
+    <p>Immagina di avere una scatola rettangolare e delle palline da ping pong. Il circle packing cerca di disporre il maggior numero possibile di palline nella scatola senza che si tocchino.</p>
+
+ <strong>Sintesi</strong>
+    <p>Il circle packing consiste nel disporre cerchi in uno spazio limitato senza sovrapposizioni, cercando di massimizzare l'efficienza dello spazio.
+			<br>
+			<br>
+			<br>
+			<br>
+			+-------------------------------------------------+<br>
+			|  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  |<br>
+			|  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  |<br>
+			|  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  |<br>
+			|  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  |<br>
+			|  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  |<br>
+			|  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  |<br>
+			|  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  |<br>
+			|  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  |<br>
+			|  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  |<br>
+			|  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  |<br>
+			
+			+-------------------------------------------------+
+	<br>
+	<br>
+	
+
+<a href="https://www.data-to-viz.com/graph/circularpacking.html" target="_blank"style="font-weight: bold; text-decoration: none; color: blue;" onmouseover="this.style.color='gray'" onmouseout="this.style.color='blue'"">Spiegazione di packing</a>
+
+	<br>
+	<br>
+	<a href="https://editor.p5js.org/cah689/sketches/B1kCFI36b" target="_blank" style="font-weight: bold; text-decoration: none; color: blue;" onmouseover="this.style.color='gray'" onmouseout="this.style.color='blue'">Esempio di packing</a>
+
+
+			</p>
+
+        </div>
+        
+
+        
+
+        <div class="cap3">
+
+          <section id = "u">
+            <h2>utilizzi</h2>
+        </section>
+        
+		<p> Il Circle Packing è un metodo di ottimizzazione geometrica con applicazioni in vari settori.
+			Nella logistica, aiuta a massimizzare l’utilizzo dello spazio nei camion di consegna.
+			Nei diagrammi, rappresenta dati gerarchici in modo intuitivo. Nel design e nell’architettura,
+			contribuisce a creare layout efficienti, come la disposizione dei posti a sedere o delle stanze.
+			Nella produzione industriale, ottimizza la disposizione dei componenti su un foglio di materiale per minimizzare gli sprechi.
+			Infine, nella scienza dei materiali, è utilizzato per studiare la disposizione delle particelle o modellare la struttura di un materiale poroso.
+			Durante il periodo del COVID-19, è stato utilizzato per organizzare la disposizione dei tavoli all'interno dei ristoranti,
+			garantendo il distanziamento sociale e la sicurezza dei clienti.
+			In sintesi, il Circle Packing è uno strumento versatile per l’ottimizzazione spaziale.
+		</p>
+		<div class="packing">
+			+-----------------------+<br>
+			|&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+			|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+			|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+			|&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+			|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+			|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+			|&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;○&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+			+-----------------------+
+		</div>
+		<p>Esempio di posizionamento dei tavoli in uno spazio</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	<div class="cap4">
+		
+		<section id = "ap">
+			<h2>altri packing</h2>
+        </section>
+        
+		
+        
+          <p> <li><strong>Square Packing</strong>: riguarda l’ottimizzazione della disposizione di un numero massimo di quadrati congruenti all’interno di una forma più grande, che può essere un quadrato o un cerchio. 
+			Se il lato del quadrato più grande è un numero intero, il numero massimo di quadrati unitari (quadrati con lato di lunghezza uno) che può contenere è dato dal quadrato di tale lunghezza. 
+			Tuttavia, determinare la quantità precisa di spazio non riempito per una lunghezza del lato non intera arbitraria rimane una questione aperta. 
+			Questo problema ha applicazioni pratiche come il caricamento di scatole su pallet.
+			<br>
+			<li><strong>Rectangle Packing</strong>: riguarda la determinazione se un dato insieme di piccoli rettangoli può essere collocato all’interno di un grande poligono, 
+			senza che nessun paio di piccoli rettangoli si sovrapponga. Esistono diverse varianti di questo problema, tra cui una in cui ci sono molteplici 
+			istanze di un singolo rettangolo di dimensioni (l, w), e un rettangolo più grande di dimensioni (L, W). L’obiettivo è impacchettare 
+			il maggior numero possibile di piccoli rettangoli nel grande rettangolo senza sovrapposizioni. Questo problema ha applicazioni pratiche come il 
+			caricamento di scatole su pallet e, in particolare, lo stivaggio della polpa di legno.</p>
+			<div class="packing">
+			
+				<p>
+					+------------------+<br>
+					|&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+					|&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+					|&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+					|&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;■&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+					+------------------+
+					<p>Esempio di square packing</p>
+				</p>
+		
+				<br>
+		
+			
+				<p>
+					+-----------------------------+<br>
+					|&nbsp;■■■■&nbsp;&nbsp;■■■■■■■■■&nbsp;&nbsp;■■■■&nbsp;|<br>
+					|&nbsp;■■■■■■■■■■■■&nbsp;&nbsp;■■■■■■&nbsp;|<br>
+					|&nbsp;■■■&nbsp;&nbsp;■■■■■■■■■■■■■■■&nbsp;|<br>
+					|&nbsp;■■■■■■■&nbsp;■■■■■■&nbsp;■■■■■&nbsp;|<br>
+					|&nbsp;■■■■■■■■■&nbsp;&nbsp;&nbsp;■■■■■■■■■|<br>
+					+-----------------------------+
+					<p>Esempio di rectangle packing</p>
+				</p>
+			</div>
+
+
+
+		
+		<div class="cap5">
+		<section id = "b">
+			<h2>Bibliografia</h2>
+        </section>
+        
+		<a href="https://www.data-to-viz.com/graph/circularpacking.html" target="_blank"style="font-weight: bold; text-decoration: none; color: blue;" onmouseover="this.style.color='gray'" onmouseout="this.style.color='blue'"">Spiegazione di packing</a>
+		<br>
+		<br>
+
+		<a href="https://editor.p5js.org/cah689/sketches/B1kCFI36b" target="_blank" style="font-weight: bold; text-decoration: none; color: blue;" onmouseover="this.style.color='gray'" onmouseout="this.style.color='blue'">Esempio di packing</a>
+		<br>
+		<br>
+
+		<a href="https://stackoverflow.com/questions/1213394/what-algorithm-can-be-used-for-packing-rectangles-of-different-sizes-into-the-sm" target="_blank" style="font-weight: bold; text-decoration: none; color: blue;" onmouseover="this.style.color='gray'" onmouseout="this.style.color='blue'">Rectangle packing</a>
+		<br>
+		<br>
+
+		<a href="https://mathworld.wolfram.com/CirclePacking.html" target="_blank" style="font-weight: bold; text-decoration: none; color: blue;" onmouseover="this.style.color='gray'" onmouseout="this.style.color='blue'">Circle packing</a>
+        
+          <p> 
+			
+				</p>
+			</div>
+        </div>
+
+
+    
+    </body>
+      </html>
