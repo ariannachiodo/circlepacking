@@ -162,7 +162,3 @@ ellipse(this.x, this.y, this.r * 2);
 
 ## Target e contesto d’uso
 Il progetto "Circle Packing" è versatile e si presta a diversi contesti d'uso educativi e divulgativi. Rivolgendosi principalmente agli studenti e agli appassionati di grafica e visualizzazione dati, può fungere da risorsa educativa per corsi di design, grafica o informatica. Offre una piattaforma per esplorare tecniche avanzate di visualizzazione dati e animazione, consentendo agli utenti di comprendere concetti complessi attraverso una rappresentazione visiva interattiva.
-
-
-
-[<img src="docs/img_04.jpeg" width="800">]()
