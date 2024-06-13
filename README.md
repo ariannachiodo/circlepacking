@@ -33,9 +33,10 @@ Per rappresentare i concetti in modo chiaro e leggibile, ho scelto di utilizzare
 
 Il layout della pagina è progettato per essere ordinato e coerente, con i glifi che aiutano a enfatizzare e illustrare i vari concetti in modo visivamente accattivante. Questo approccio garantisce un'esperienza utente piacevole e funzionale, facilitando l'interazione e l'esplorazione delle informazioni presentate.
 
-[<img src="docs/img_01.png" width="800">]()
-[<img src="docs/img_02.png" width="800">]()
-[<img src="docs/img_03.png" width="800">]()
+[<img src="docs/Chiodo-Arianna_circle-packing_01.png" width="800">]()
+[<img src="docs/Chiodo-Arianna_circle-packing_02.png" width="800">]()
+[<img src="docs/Chiodo-Arianna_circle-packing_03.png" width="800">]()
+
 
 
 ## Tecnologia usata
